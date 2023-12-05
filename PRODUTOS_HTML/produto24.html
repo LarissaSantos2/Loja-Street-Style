@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreetStyle-Produtos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <!-- Menu -->
+    <section id="header">
+        <a href="#"><img src="../IMG/logo2.png" class="logo" alt=""></a>
+        <ul id="navbar" class="menu-desktop">
+            <li><a href="../HTML/index.html">Home</a></li>
+            <li><a class="active" href="../HTML/shop.html">Produtos</a></li>
+            <li><a href="../HTML/blog.html">Blog</a></li>
+            <li><a href="../HTML/sobre.html">Sobre</a></li>
+            <li><a href="../HTML/contatos.html">Contatos</a></li>
+            <li id="lg-bag">
+                <i class="far fa-shopping-bag" id="icone-carrinho">
+                    <span id="quantidade-carrinho">0</span>
+                </i>
+            </li>
+            <a href="#" id="close"><i class="far fa-times"></i></a>
+        </ul>
+
+        <div id="mobile">
+            <i id="bar" class="fas fa-outdent"></i>
+            <i class="far fa-shopping-bag" id="icone-carrinho-mobile">
+            </i>
+        </div>
+
+        <div class="carrinho1">
+            <h2 class="titulo-carrinho">Seu Carrinho</h2>
+            <div class="conteudo-carrinho"></div>
+            <div class="total">
+                <div class="titulo-total">Total</div>
+                <div class="preco-total">R$0</div>
+            </div>
+            <a href="../HTML/cadastro1.html" target="_blank"><button type="button" class="btn-comprar">Comprar
+                    Agora</button></a>
+            <i class='bx bx-x' id="fechar-carrinho"></i>
+        </div>
+    </section>
+
+
+    <section id="prodetalhes" class="section-p1">
+        <div class="so-um-produto">
+            <img class="imagem-produto" src="../IMG/prod24.jpg" width="100%" id="MainImg" alt="">
+
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="../IMG/prod24-1.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="../IMG/prod5-1.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="../IMG/prod5-4.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="../IMG/prod24.jpg" width="100%" class="small-img" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="so-um-produto so-detalhes">
+            <h6>Produtos / Camiseta</h6>
+            <h4 class="titulo-produto">Camiseta Prision</h4>
+            <h2 class="preco">R$60.99</h2>
+            <select>
+                <option>Selecione o tamanho</option>
+                <option>P</option>
+                <option>M</option>
+                <option>G</option>
+                <option>GG</option>
+                <option>G1</option>
+                <option>G2</option>
+                <option>G3</option>
+            </select>
+            <input type="number" value="1">
+            <button class="normal adicionar-carrinho carrinho"
+                onclick="adicionarAoCarrinho(event, 'Camiseta Prision', 'R$60.99', '../IMG/prod24.jpg');">Adicione ao
+                carrinho</button>
+
+            <h4>Detalhes do Produto</h4>
+            <span>Camiseta confeccionada em tecido de malha. Possui gola redonda e manga curta,
+                acabamento em ribana e costura no tom.
+                Tamanhos: P ao G3.
+                Composição da Camiseta: 100% Algodão.
+                Cor Predominante: Preto.
+                <h4>Cuidados com a sua peça Street Style.</h4>
+                Este produto requer certos cuidados.
+                Siga a sugestão de conservação
+                Conservação e Lavagem:
+                Lavar a mão;
+                Lavagem até 40°C;
+                Não usar produtos alvejantes,
+                Proibido secadora;
+                Passar sobre o avesso, temperatura máxima na base do
+                ferro de passar 110°C , o vapor pode causar danos
+                irreversíveis;
+                Não lavar à seco;
+                Secar a sombra;
+                Não deixar de molho;
+                Não lavar junto com peças coloridas.
+            </span>
+        </div>
+    </section>
+
+    <!-- Produtos em baixo do produto principal -->
+    <section id="produto1" class="section-p1">
+        <h2>Produtos em destaque</h2>
+        <p>Nova coleção de verão</p>
+        <div class="pro-container">
+            <div class="pro" onclick="redirecionar('../PRODUTOS_HTML/produto25.html');">
+                <!-- Link para descrição do Produto -->
+                <img src="../IMG/prod25.jpg" alt="" class="imagem-produto"> <!-- Imagem do Produto -->
+                <div class="des">
+                    <span class="categoria">streetstyle</span>
+                    <h5 class="titulo-produto">Camisa Baseball Rosa</h5> <!-- Nome do Produto -->
+                    <div class="star">
+                        <i class="fas fa-star"></i> <!-- Estrelas do produto -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="preco">R$85.99</h4>
+                </div>
+                <i class="fal fa-shopping-cart adicionar-carrinho carrinho"
+                    onclick="adicionarAoCarrinho(event, 'Camisa Baseball Rosa', 'R$85.99', '../IMG/prod25.jpg');"></i>
+                <!-- Imagem Carrinho -->
+            </div>
+            <div class="pro" onclick="redirecionar('../PRODUTOS_HTML/produto10.html');">
+                <img src="../IMG/prod10.jpg" alt="" class="imagem-produto"> <!-- Imagem Produto -->
+                <div class="des">
+                    <span class="categoria">streetstyle</span>
+                    <h5 class="titulo-produto">Blusa sem ombros</h5> <!-- Nome Produto -->
+                    <div class="star">
+                        <i class="fas fa-star"></i> <!-- Estrelas do produto -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="preco">R$55.99</h4>
+                </div>
+                <i class="fal fa-shopping-cart adicionar-carrinho carrinho"
+                    onclick="adicionarAoCarrinho(event, 'Blusa sem ombros', 'R$55.99', '../IMG/prod10.jpg');"></i>
+                <!-- Imagem Carrinho -->
+            </div>
+            <div class="pro" onclick="redirecionar('../PRODUTOS_HTML/produto8.html');">
+                <img src="../IMG/prod8.jpg" alt="" class="imagem-produto"> <!-- Imagem Produto -->
+                <div class="des">
+                    <span class="categoria">streetstyle</span>
+                    <h5 class="titulo-produto">Bermuda Dream</h5> <!-- Nome Produto -->
+                    <div class="star">
+                        <i class="fas fa-star"></i> <!-- Estrelas do produto -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="preco">R$58.99</h4>
+                </div>
+                <i class="fal fa-shopping-cart adicionar-carrinho carrinho"
+                    onclick="adicionarAoCarrinho(event, 'Bermuda Dream', 'R$58.99', '../IMG/prod8.jpg');"></i>
+                <!-- Imagem Carrinho -->
+            </div>
+            <div class="pro" onclick="redirecionar('../PRODUTOS_HTML/produto19.html');">
+                <!-- Link para descrição do Produto -->
+                <img src="../IMG/prod19.png" alt="" class="imagem-produto"> <!-- Imagem do Produto -->
+                <div class="des">
+                    <span class="categoria">streetstyle</span>
+                    <h5 class="titulo-produto">Camiseta TUPAC</h5> <!-- Nome do Produto -->
+                    <div class="star">
+                        <i class="fas fa-star"></i> <!-- Estrelas do produto -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="preco">R$58.99</h4>
+                </div>
+                <i class="fal fa-shopping-cart adicionar-carrinho carrinho"
+                    onclick="adicionarAoCarrinho(event, 'Camiseta TUPAC', 'R$58.99', '../IMG/prod19.png');"></i>
+                <!-- Imagem Carrinho -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Inscrição para usúarios receberem atualizações da loja -->
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Cadastre-se para receber Newsletters</h4>
+            <p>Receba atualizações por e-mail sobre nossa loja e <span>ofertas exclusivas.</span></p>
+        </div>
+        <div class="form1">
+            <input class="input1" type="text" id="emailInput" placeholder="Seu endereço de e-mail">
+            <button class="normal button1" onclick="cadastrarNewsletter()">Cadastre-se</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="../IMG/logo2.png" alt="">
+            <h4>Contatos</h4>
+            <p><strong>Endereço: </strong>Rua Voluntários da Pátria, 1926</p>
+            <p><strong>Telefone: </strong> 11 91327-0984</p>
+            <p><strong>Horário: </strong> 9:00 às 18:00 - Seg a Sab</p>
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+        </div>
+
+        <div class="col">
+            <h4>Sobre</h4>
+            <a href="#">Sobre nós</a>
+            <a href="#">Informações de Rastreio</a>
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos e Condições</a>
+            <a href="#">Nos contate</a>
+        </div>
+
+        <div class="col">
+            <h4>Minha Conta</h4>
+            <a href="#">Login</a>
+            <a href="#">Visualizar Carrinho</a>
+            <a href="#">Minha Lista</a>
+            <a href="#">Troca de Produtos</a>
+            <a href="#">Ajuda</a>
+        </div>
+
+        </div>
+    </footer>
+
+
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var smalling = document.getElementsByClassName("small-img");
+
+        smalling[0].onclick = function () {
+            MainImg.src = smalling[0].src;
+        }
+        smalling[1].onclick = function () {
+            MainImg.src = smalling[1].src;
+        }
+        smalling[2].onclick = function () {
+            MainImg.src = smalling[2].src;
+        }
+        smalling[3].onclick = function () {
+            MainImg.src = smalling[3].src;
+        }
+    </script>
+
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>

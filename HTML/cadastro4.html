@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido-StreetStyle</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .popup {
+            width: 400px;
+            background: grey;
+            border-radius: 6px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            padding: 0 30px 30px;
+            color: #fff;
+        }
+
+        .popup img {
+            width: 100px;
+            margin-top: -50px;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .popup h2 {
+            font-size: 38px;
+            font-weight: 500;
+            margin: 30px 0 10px
+        }
+
+        .popup button {
+            width: 100%;
+            margin-top: 50px;
+            padding: 10px 0;
+            background: #6fd649;
+            color: white;
+            border: 0;
+            outline: none;
+            font-size: 18px;
+            border-radius: 4px;
+            cursor: pointer;
+            box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+    <div class="container">
+        <div class="popup" id="popup">
+            <img src="../IMG/tick1.png" alt="">
+            <h2>Obrigado por escolher a Street Style!</h2>
+            <p>Seu pedido foi feito com sucesso, aguarde o envio.</p>
+            <a href="index.html"><button type="button">OK</button></a>
+        </div>
+    </div>
+
+
+
+    </script>
+</body>
+
+</html>

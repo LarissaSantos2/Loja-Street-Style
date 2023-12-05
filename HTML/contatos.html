@@ -1,0 +1,159 @@
+git remote add origin https://github.com/LarissaSantos2/Loja-Street-Style.git<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreetStyle-Contatos</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <!-- Menu -->
+    <section id="header">
+        <a href="#"><img src="../IMG/logo2.png" class="logo" alt=""></a>
+        <ul id="navbar" class="menu-desktop">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Produtos</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a class="active" href="contatos.html">Contatos</a></li>
+            <li id="lg-bag">
+                <i class="far fa-shopping-bag" id="icone-carrinho">
+                    <span id="quantidade-carrinho">0</span>
+                </i>
+            </li>
+            <a href="#" id="close"><i class="far fa-times"></i></a>
+        </ul>
+
+        <div id="mobile">
+            <i id="bar" class="fas fa-outdent"></i>
+            <i class="far fa-shopping-bag" id="icone-carrinho-mobile">
+            </i>
+        </div>
+
+        <div class="carrinho1">
+            <h2 class="titulo-carrinho">Seu Carrinho</h2>
+            <div class="conteudo-carrinho"></div>
+            <div class="total">
+                <div class="titulo-total">Total</div>
+                <div class="preco-total">R$0</div>
+            </div>
+            <a href="cadastro1.html" target="_blank"><button type="button" class="btn-comprar">Comprar
+                    Agora</button></a>
+            <i class='bx bx-x' id="fechar-carrinho"></i>
+        </div>
+    </section>
+
+
+    <section id="page-header" class="blog-header">
+        <!-- Banner Contatos -->
+        <h2>#Venha_Nos_Conhecer</h2>
+        <p>Deixe sua mensagem!</p>
+
+    </section>
+    <!-- Dados da Loja -->
+    <section id="contato-detalhes" class="section-p1">
+        <div class="detalhes">
+            <h2>Visite nossa loja física ou entre em contato conosco.</h2>
+            <h3>Loja Física</h3>
+            <div>
+                <li>
+                    <i class="fal fa-map"></i>
+                    <p>R. Voluntários da Pátria, 1926 - Santana, São Paulo - SP, 02010-400 </p>
+                </li>
+                <li>
+                    <i class="fal fa-envelope"></i>
+                    <p>streetstyle@gmail.com</p>
+                </li>
+                <li>
+                    <i class="fal fa-phone-alt"></i>
+                    <p>11 91327-0984</p>
+                </li>
+                <li>
+                    <i class="fal fa-clock"></i>
+                    <p>Segunda a Sábado: 9:00h às 18:00h</p>
+                </li>
+            </div>
+        </div>
+        <!-- Mapa da localização da Loja -->
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.8117964732523!2d-46.628819825344614!3d-23.503287459459973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef6294502d96d%3A0xecbdeb2ea73c62c5!2sR.%20Volunt%C3%A1rios%20da%20P%C3%A1tria%2C%201926%20-%20Santana%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002010-400!5e0!3m2!1spt-BR!2sbr!4v1698614091939!5m2!1spt-BR!2sbr"
+                width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <!-- Formulário Entrar em Contato -->
+    <section id="form-detalhes">
+        <form id="contatoForm">
+            <span>Deixe seu recado</span>
+            <h2>Entre em Contato</h2>
+            <input type="text" name="nome" placeholder="Seu nome">
+            <input type="text" name="email" placeholder="Seu E-mail">
+            <input type="text" name="assunto" placeholder="Assunto">
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
+            <button type="submit" class="normal" id="enviarBtn">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Inscrição para usúarios receberem atualizações da loja -->
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Cadastre-se para receber Newsletters</h4>
+            <p>Receba atualizações por e-mail sobre nossa loja e <span>ofertas exclusivas.</span></p>
+        </div>
+        <div class="form1">
+            <input class="input1" type="text" id="emailInput" placeholder="Seu endereço de e-mail">
+            <button class="normal button1" onclick="cadastrarNewsletter()">Cadastre-se</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="../IMG/logo2.png" alt="">
+            <h4>Contatos</h4>
+            <p><strong>Endereço: </strong>Rua Voluntários da Pátria, 1926</p>
+            <p><strong>Telefone: </strong> 11 91327-0984</p>
+            <p><strong>Horário: </strong> 9:00 às 18:00 - Seg a Sab</p>
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+        </div>
+
+        <div class="col">
+            <h4>Sobre</h4>
+            <a href="#">Sobre nós</a>
+            <a href="#">Informações de Rastreio</a>
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos e Condições</a>
+            <a href="#">Nos contate</a>
+        </div>
+
+        <div class="col">
+            <h4>Minha Conta</h4>
+            <a href="#">Login</a>
+            <a href="#">Visualizar Carrinho</a>
+            <a href="#">Minha Lista</a>
+            <a href="#">Troca de Produtos</a>
+            <a href="#">Ajuda</a>
+        </div>
+
+        </div>
+    </footer>
+
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>

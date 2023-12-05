@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pagamento-STreetStyle</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <!-- Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="../CSS/stylecadastro.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <form action="">
+      <div class="row">
+        <div class="col">
+          <h3 class="title">Endereço de Cobrança</h3>
+          <div class="inputBox">
+            <span>Nome Completo :</span>
+            <input type="text" placeholder="">
+          </div>
+          <div class="inputBox">
+            <span>E-mail: :</span>
+            <input type="email" placeholder="seuemail@gmail.com">
+          </div>
+          <div class="inputBox">
+            <span>Endereço :</span>
+            <input type="text" placeholder="Nome de sua Rua e Número">
+          </div>
+          <div class="inputBox">
+            <span>Cidade :</span>
+            <input type="text" placeholder="São Paulo">
+          </div>
+          <div class="flex">
+            <div class="inputBox">
+              <span>Estado :</span>
+              <input type="text" placeholder="São Paulo">
+            </div>
+            <div class="inputBox">
+              <span>CEP :</span>
+              <input type="text" placeholder="0233000">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h3 class="title">Pagamento</h3>
+          <div class="inputBox">
+            <span>Métodos de Pagamento Aceito :</span>
+            <img src="../IMG/cartoes1.png" alt="Métodos de Pagamento Aceito">
+            <img src="../IMG/bolpix.png" alt="Cartão Visa, Mastercard, Boleto, Pix">
+          </div>
+          <div class="inputBox">
+            <span>Nome no cartão :</span>
+            <input type="text" placeholder="">
+          </div>
+          <div class="inputBox">
+            <span>Número do Cartão :</span>
+            <input type="text" placeholder="1111-2222-3333-4444">
+          </div>
+          <div class="inputBox">
+            <span>Mês que expira :</span>
+            <input type="text" placeholder="janeiro">
+          </div>
+          <div class="flex">
+            <div class="inputBox">
+              <span>Ano de Expiração :</span>
+              <input type="number" placeholder="2023">
+            </div>
+            <div class="inputBox">
+              <span>CVV :</span>
+              <input type="text" placeholder="123">
+            </div>
+          </div>
+        </div>
+      </div>
+      <input type="submit" value="Pagar Pedido" class="submit-btn" id="pagarPedidoBtn">
+    </form>
+  </div>
+
+  <script>
+    // Script para cadastro3 ir para cadastro 4 a partir do input
+
+    document.getElementById('pagarPedidoBtn').addEventListener('click', function (event) {
+      event.preventDefault();  // Evita o comportamento padrão do formulário
+      window.location.href = '../HTML/cadastro4.html';
+    });
+  </script>
+
+</body>
+
+</html>

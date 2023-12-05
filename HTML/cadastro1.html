@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/324b71f187.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Cadastro-StreetStyle</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="login-container" id="login-container">
+            <div class="form-container">
+                <form class="form form-login">
+                    <h2 class="form-title">Entrar com</h2>
+                    <div class="form-social">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="form-text">ou utilize sua conta</p>
+                    <div class="form-input-container">
+                        <input type="email" class="form-input" placeholder="Email">
+                        <input type="password" class="form-input" placeholder="Senha">
+                    </div>
+                    <a href="#" class="form-link">Esqueceu a senha?</a>
+                    <a href="cadastro2.html"><button type="button" class="form-button">Logar</button></a>
+                    <p class="mobile-text">
+                        Não tem conta?
+                        <a href="#" id="open-register-mobile">Registre-se</a>
+                    </p>
+                </form>
+                <form class="form form-register">
+                    <h2 class="form-title">Criar Conta</h2>
+                    <div class="form-social">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="form-text">ou cadastre seu email</p>
+                    <div class="form-input-container">
+                        <input type="text" class="form-input" placeholder="Nome">
+                        <input type="email" class="form-input" placeholder="Email">
+                        <input type="password" class="form-input" placeholder="Senha">
+                    </div>
+                    <a href="cadastro2.html"><button type="button" class="form-button">Cadastrar</button></a>
+                    <p class="mobile-text">
+                        Já tem conta?
+                        <a href="#" id="open-login-mobile">Login</a>
+                    </p>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <h2 class="form-title form-title-light">Já tem conta?</h2>
+                    <p class="form-text1">Para entrar faça login com suas informações de cadastro</p>
+                    <button class="form-button form-button-light" id="open-login">Entrar</button>
+                </div>
+                <div class="overlay">
+                    <h2 class="form-title form-title-light">Olá cliente!</h2>
+                    <p class="form-text1">Cadastre-se e prossiga para o endereço e pagamento</p>
+                    <button class="form-button form-button-light" id="open-register">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../JS/scriptcadastro1.js"></script>
+</body>
+
+</html>
